@@ -1,5 +1,4 @@
 #python
-from uuid import UUID
 from datetime import date
 from typing import Optional
 #models
@@ -11,11 +10,6 @@ from pydantic import Field
 
 
 class User(UserBase):
-    
-    password: str = Field(
-        ...,
-        min_length=8
-    )
     first_name: str = Field(
         ...,
         min_length=1,
