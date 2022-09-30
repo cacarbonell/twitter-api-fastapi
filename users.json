@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "alex@gmail.com",
+        "first_name": "Cristhian",
+        "last_name": "Carbonell",
+        "birth_date": "1990-09-06",
+        "password": "Cla741236*"
+    },
+    {
+        "user_id": "40f8f58e-b168-458b-8c97-ff9c7ce83a90",
+        "email": "jaime@gmail.com",
+        "first_name": "Jaime",
+        "last_name": "Carbonell",
+        "birth_date": "2000-06-12",
+        "password": "Jaime2000"
+    }
+]

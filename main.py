@@ -1,5 +1,6 @@
 #python
 from typing import List
+import json
 #models
 from models.user import User
 from models.user_register import UserRegister
@@ -7,6 +8,7 @@ from models.tweet import Tweet
 #fastapi
 from fastapi import FastAPI
 from fastapi import status
+from fastapi import Body
 
 app = FastAPI()
 
@@ -22,9 +24,9 @@ app = FastAPI()
     summary="Register a User",
     tags=["Users"]
 )
-def singup():
+def singup(user: UserRegister = Body(...)):
     """
-    Sing Up
+    Sing Up 
     
     This path operations register a user in the app
     
@@ -37,9 +39,19 @@ def singup():
         - email: EmailStr
         - first_name: str
         - last_name: str
-        - birth_date: str
+        - birth_date: datetime
     """
-    pass
+    with open("users.json", "r+", encoding="utf-8") as f:
+        results = json.loads(f.read())
+        user_dict = user.dict()
+        user_dict["user_id"] = str(user_dict["user_id"])
+        user_dict["birth_date"] = str(user_dict["birth_date"])
+        results.append(user_dict)
+        f.seek(0)
+        f.write(json.dumps(results))
+    
+    return user
+        
 
 ### Login a user
 @app.post(
