@@ -1,1 +1,28 @@
-[]
+[
+    {
+        "tweet_id": "1eb1f8cf-f0ef-4fac-8a48-cc6efe8bc239",
+        "content": "This is first tweet in the history",
+        "created_at": "2022-09-30 18:35:40.482349",
+        "updated_at": "2022-09-30 18:36:14.270000+00:00",
+        "by": {
+            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "email": "alex@gmail.com",
+            "first_name": "Cristhian",
+            "last_name": "Carbonell",
+            "birth_date": "1990-09-06"
+        }
+    },
+    {
+        "tweet_id": "e1fa4a68-5b39-4ac8-9325-ed7018cb419a",
+        "content": "Hola, este es mi primer tweet",
+        "created_at": "2022-09-30 18:35:40.482349",
+        "updated_at": "2022-09-30 18:36:14.270000+00:00",
+        "by": {
+            "user_id": "40f8f58e-b168-458b-8c97-ff9c7ce83a90",
+            "email": "jaime@gmail.com",
+            "first_name": "Jaime",
+            "last_name": "Carbonell",
+            "birth_date": "2000-06-12"
+        }
+    }
+]
